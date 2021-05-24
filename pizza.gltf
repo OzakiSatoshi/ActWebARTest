@@ -1,0 +1,275 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.0.5",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1,
+                2,
+                3
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Light",
+            "rotation" : [
+                0.16907575726509094,
+                0.7558803558349609,
+                -0.27217137813568115,
+                0.570947527885437
+            ],
+            "translation" : [
+                4.076245307922363,
+                5.903861999511719,
+                -1.0054539442062378
+            ]
+        },
+        {
+            "name" : "Camera",
+            "rotation" : [
+                0.483536034822464,
+                0.33687159419059753,
+                -0.20870360732078552,
+                0.7804827094078064
+            ],
+            "translation" : [
+                7.358891487121582,
+                4.958309173583984,
+                6.925790786743164
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Cylinder001",
+            "rotation" : [
+                0,
+                0.5002832412719727,
+                0,
+                0.8658618330955505
+            ],
+            "scale" : [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0010000000474974513
+            ]
+        },
+        {
+            "mesh" : 1,
+            "name" : "Cylinder002",
+            "rotation" : [
+                0,
+                0.5002832412719727,
+                0,
+                0.8658618330955505
+            ],
+            "scale" : [
+                0.000982151017524302,
+                0.0010000000474974513,
+                0.000982151017524302
+            ],
+            "translation" : [
+                0.0007095735636539757,
+                0.012012341991066933,
+                0.0002893775817938149
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "01 - Default",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0,
+                    "texCoord" : 0
+                },
+                "roughnessFactor" : 0.5527864098548889
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "20 - Default",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 1,
+                    "texCoord" : 0
+                },
+                "roughnessFactor" : 0.5527864098548889
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Mesh",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Mesh.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "indices" : 7,
+                    "material" : 1
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "source" : 0
+        },
+        {
+            "source" : 1
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "uvw_pizza_texture1",
+            "uri" : "uvw_pizza_texture1.jpg"
+        },
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "wood-081_arariba-1-light_d1",
+            "uri" : "wood-081_arariba-1-light_d1.jpg"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 2269,
+            "max" : [
+                198.31842041015625,
+                21.546615600585938,
+                196.25930786132812
+            ],
+            "min" : [
+                -195.89761352539062,
+                0,
+                -198.13670349121094
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 2269,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 2269,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 13392,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 19742,
+            "max" : [
+                212.2537384033203,
+                0,
+                212.24423217773438
+            ],
+            "min" : [
+                -212.25372314453125,
+                -12,
+                -212.2442626953125
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 19742,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 19742,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 114048,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 27228,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 27228,
+            "byteOffset" : 27228
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 18152,
+            "byteOffset" : 54456
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 26784,
+            "byteOffset" : 72608
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 236904,
+            "byteOffset" : 99392
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 236904,
+            "byteOffset" : 336296
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 157936,
+            "byteOffset" : 573200
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 228096,
+            "byteOffset" : 731136
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 959232,
+            "uri" : "pizza.bin"
+        }
+    ]
+}
