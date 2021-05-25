@@ -19,66 +19,62 @@
 <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v5.0.0/dist/aframe-extras.min.js"></script>
 <!-- shaderライブラリ -->
 <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
-<script src="ModelChange.js"></script>
 
 <link rel="stylesheet" href="style.css">
 <title>Food WebAR</title>
 </head>
 
 <body style="margin : 0px; overflow: hidden">
-
-<body>
-  <div class="arjs-loader">
-  </div>
-
-  <!-- Assetの定義。デバッグ用の画面表示、VR用のボタンをそれぞれ非表示、オブジェクトが暗い場合はgammmaOutputをtrueに -->
-  <a-scene id="model" embedded arjs="debugUIEnabled:false;" renderer="gammaOutput: true;"  vr-mode-ui="enabled: false">
-        <!-- 3Dモデル -->
-        <a-asset-item id="pizza" src="pizza.gltf"></a-asset-item></a-assets>
+  
+  <body>
+    <div class="arjs-loader">
+    </div>
+    
+    <!-- Assetの定義。デバッグ用の画面表示、VR用のボタンをそれぞれ非表示、オブジェクトが暗い場合はgammmaOutputをtrueに -->
+    <a-scene embedded arjs="debugUIEnabled:false;" renderer="gammaOutput: true;"  vr-mode-ui="enabled: false">
+      <!-- 3Dモデル -->
+      <a-asset-item id="pizza" src="pizza.gltf"></a-asset-item></a-assets>
+      <a-asset-item id="donuts" src="donuts.gltf"></a-asset-item></a-assets>
         <!-- 同じ階層にbinファイルを配置することを忘れずに -->
         <!-- gifファイルの定義 -->
         <!-- <a-assets><img id="usi" src="/assets/usi.gif"></a-assets> -->
         <!-- 『.patt』ファイルを読み込む -->
         <a-marker preset="custom" type="pattern" url="pattern-QR_817836.patt" >
-        <a-animation attribute="position" to="0 0 0" direction="alternate" dur="1000" repeat="indefinite" easing="linear"></a-animation>
-
-        <!-- 3Dモデルを表示 -->
-    
-        <!-- <a-entity gltf-model="#pizza" scale="10 10 10" animation-mixer></a-entity> -->
-        <div id="model">
-          <a-entity
-          id="pizzamodel"
-          gltf-model="#pizza"
-          scale="10 10 10"
-          animation-mixer>
-        </a-entity>
-      </div>
-
+          <a-animation attribute="position" to="0 0 0" direction="alternate" dur="1000" repeat="indefinite" easing="linear"></a-animation>
+          
+          <!-- 3Dモデルを表示 -->
+          
+          <!-- <a-entity gltf-model="#pizza" scale="10 10 10" animation-mixer></a-entity> -->
+          <div id="model">
+            <a-entity id="pizzamodel" gltf-model="#pizza" scale="10 10 10" animation-mixer></a-entity>
+          </div>
+        
         <!-- GIFを表示 -->
         <!-- scale 右、上、？ -->
         <!-- position 右、空、上？ -->
         <!-- <a-entity
-                    scale="4.5 3 1"
-                    position="1.2 0 0.5"
-                    geometry="primitive: plane;"
-                    material="shader:gif; src:#usi;
-                    color:white;
-                    opacity:1"
-                    rotation="-90 0 0">
+          scale="4.5 3 1"
+          position="1.2 0 0.5"
+          geometry="primitive: plane;"
+          material="shader:gif; src:#usi;
+          color:white;
+          opacity:1"
+          rotation="-90 0 0">
         </a-entity> -->
         
-          <!-- 画像を表示 -->
-          <!--<a-image id="usi" src="#usi" position="0 0 0" rotation="-90 0 0">
-            <a-animation attribute="position" to="0 0 0" direction="alternate" dur="1000" repeat="indefinite" easing="linear">
-            </a-animation>
-          </a-image> -->
+        <!-- 画像を表示 -->
+        <!--<a-image id="usi" src="#usi" position="0 0 0" rotation="-90 0 0">
+          <a-animation attribute="position" to="0 0 0" direction="alternate" dur="1000" repeat="indefinite" easing="linear">
+          </a-animation>
+        </a-image> -->
+        
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+    <script src="ModelChange.js"></script>
     
-  </a-marker>
-  <a-entity camera></a-entity>
-  </a-scene>
-
-    </body>
-</html>
+  </body>
+  </html>
 
 
 
