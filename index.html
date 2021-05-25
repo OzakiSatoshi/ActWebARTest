@@ -19,6 +19,7 @@
 <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v5.0.0/dist/aframe-extras.min.js"></script>
 <!-- shaderライブラリ -->
 <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+<script src="shader-grid-glitch.js"></script>
 <script src="ModelChange.js"></script>
 
 <link rel="stylesheet" href="style.css">
@@ -35,7 +36,7 @@
     <a-scene embedded arjs="debugUIEnabled:false;" renderer="gammaOutput: true;"  vr-mode-ui="enabled: false">
       <!-- 3Dモデル -->
       <a-asset-item id="pizza" src="pizza.gltf"></a-asset-item></a-assets>
-      <a-asset-item id="donuts" src="donuts.gltf"></a-asset-item></a-assets>
+      <a-asset-item id="donuts" src="Donuts.gltf"></a-asset-item></a-assets>
         <!-- 同じ階層にbinファイルを配置することを忘れずに -->
         <!-- gifファイルの定義 -->
         <!-- <a-assets><img id="usi" src="/assets/usi.gif"></a-assets> -->
@@ -47,7 +48,7 @@
           
           <!-- <a-entity gltf-model="#pizza" scale="10 10 10" animation-mixer></a-entity> -->
           <div id="model">
-            <a-entity 
+            <a-entity
               gltf-model="#pizza" 
               scale="10 10 10" 
               animation-mixer>
@@ -73,12 +74,11 @@
           </a-animation>
         </a-image> -->
         
-      </a-marker>
+        </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
-    
   </body>
-  </html>
+</html>
 
 
 
